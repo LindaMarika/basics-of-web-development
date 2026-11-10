@@ -1,0 +1,94 @@
+<!--
+    A4 - Saarlin
+    Created by: Linda Lambert
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SAARLIN</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+
+  <body>
+    <header>
+      <h1>SAARLIN</h1>
+      <p>Jewellery</p>
+    </header>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="register.html"><strong>REGISTER</strong></a>
+    </nav>
+
+    <main>
+      <section class="register">
+        <h2>Register</h2>
+
+        <p>Create an account by filling in the registration form below.</p>
+
+        <form action="https://httpbin.org/post" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            minlength="3"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+          />
+
+          <label for="user-type">User type</label>
+          <select id="user-type" name="user_type" required>
+            <option value="">Choose a user type</option>
+            <option value="personal">Personal customer</option>
+            <option value="business">Business customer</option>
+            <option value="other">Other</option>
+          </select>
+
+          <div class="terms">
+            <p>
+              By registering, you agree to provide accurate information and use
+              your account responsibly.
+            </p>
+
+            <input
+              type="checkbox"
+              id="terms"
+              name="terms"
+              value="accepted"
+              required
+            />
+            <label for="terms">I accept the Terms of Use</label>
+          </div>
+
+          <button type="submit">Register</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Saarlin - Est. 2021</p>
+    </footer>
+  </body>
+</html>
